@@ -1,0 +1,82 @@
+/* inputsModules.css */
+.input-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  color: #777;
+}
+
+.inputs-sections {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .titulo-label {
+    font-size: 12px;
+    margin-top: 1em;
+    font-weight: 500;
+  }
+  
+  .inputs-style {
+    display: flex;
+  }
+  
+  .input-style {
+    flex: 1;
+    padding: .8em 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 300;
+    transition: border-color 0.3s; /* Adicionamos uma transição para suavizar a mudança de cor */
+    outline: none; /* Removemos a borda preta quando o input está em foco */
+    
+  }
+  
+  /* Estilização quando o cursor está sobre o input */
+  .input-style:hover {
+    border-color: rgb(16, 115, 97); /* Cor de hover desejada */
+  }
+  
+  /* Estilização quando o input está em foco */
+  .input-style:focus {
+    border-color: #0071b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Estilização quando o input está ativo (pressionado) */
+  .input-style:active {
+    border-color: #0071b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+  }
+  input[type='submit']{
+    background-color: #106d6d;
+    color: #ffffff;
+    font-size: 16px;
+    width: 100%;
+    max-width: 200px; /* Largura máxima do botão */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s !important;
+  }
+  input[type='submit']:hover{
+    background-color:#0071b3;
+  }
+  input[type='button']{
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);    
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    max-width: 200px; /* Largura máxima do botão */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s !important;
+  }
+  input[type='button']:hover{
+    background-image: linear-gradient(to left, #e52d27 100%, #b31217 0%, #e52d27 51%);
+  }
+  

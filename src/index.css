@@ -29,7 +29,8 @@ ul{
 }
 
 .container-left {
-  height: 100vh !important;
+  height: 100% !important;
+  display: flex;
 }
 
 .container-right {
@@ -39,7 +40,6 @@ ul{
 .footer {
   grid-column: 1 / span 2; /* Ocupa as duas colunas */
   text-align: center;
-  height: .1em;
 }
 
 .header{

@@ -2,6 +2,7 @@
 
 import SidebarMenu from '../../Components/NovoSideBar';
 import UserCard from '../../Components/UserCard';
+import CardInfo from '../../Components/CardInfo';
 
 function Dashboard() {
   return (
@@ -15,6 +16,7 @@ function Dashboard() {
             <div className="header">
             <UserCard/>
             </div>
+
 
 
 

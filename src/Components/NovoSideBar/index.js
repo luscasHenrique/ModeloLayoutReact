@@ -116,7 +116,7 @@ const SidebarMenu = () => {
             
             {/* Aqui ficará a parte do código referente aos menus e sub-menus */}
             <div className="menu">
-              <span className="menu-title">Menu</span>
+              <p className="menu-title">Menu</p>
               <ul>
                 <li>
                   <div class="search-container">
