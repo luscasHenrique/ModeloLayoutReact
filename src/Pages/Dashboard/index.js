@@ -1,8 +1,14 @@
 
+// bibliotecas
+import { IoMdPaperPlane} from 'react-icons/io';
+import React, { useState, useEffect} from 'react';
 
+
+
+// components
 import SidebarMenu from '../../Components/NovoSideBar';
 import UserCard from '../../Components/UserCard';
-import CardInfo from '../../Components/CardInfo';
+import RadialProgressBar from '../../Components/CardProgressBar';
 
 function Dashboard() {
   return (
@@ -17,11 +23,16 @@ function Dashboard() {
             <UserCard/>
             </div>
 
-
-
-
-
-
+            <div>
+            <RadialProgressBar
+              percentage={50}
+              icon={<IoMdPaperPlane />}
+              total={120}
+              title="Enviados"
+              radialColor="#237141" // Defina a cor do radial 
+              textColor="#237141" // Defina a cor do texto
+            />
+            </div>
 
         </div>   
 

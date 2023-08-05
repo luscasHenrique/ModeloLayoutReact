@@ -27,6 +27,7 @@ function RadialProgressBar({ percentage, icon, title, radialColor, textColor, to
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
+          fontSize: '1.5rem', // Defina aqui o tamanho da fonte desejado
         },
       },
     });
@@ -37,11 +38,12 @@ function RadialProgressBar({ percentage, icon, title, radialColor, textColor, to
   return (
     <div className="radial-progress-container">
       <div className="box">
-        <div className="progress" ref={progressBarRef} />
+        <div className="progress" ref={progressBarRef}>
+        </div>
       </div>
       <div className="icon-title-container">
-        <div className="icon">{icon} {total}</div>
-        <div className="title">{title}</div>
+        <div className="icon-progress">{icon} {total}</div>
+        <div className="title-progress">{title}</div>
       </div>
     </div>
   );

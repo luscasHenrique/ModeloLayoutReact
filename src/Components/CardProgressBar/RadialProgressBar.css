@@ -2,6 +2,10 @@
 .radial-progress-container {
   display: flex;
   align-items: center;
+  border-radius: .5em;
+  box-shadow: 1px 2px 3px #ccc;
+  padding: 1em;
+  width: fit-content;
 }
 
 .box {
@@ -12,6 +16,7 @@
   width: 5rem; /* Defina o tamanho do círculo */
   height: auto; /* Defina o tamanho do círculo */
   position: relative;
+  background: none;
 }
 
 .progress-circle {
@@ -23,7 +28,7 @@
 /* RadialProgressBar.css */
 .progress-circle circle {
   fill: none;
-  stroke-width: 0.6em; /* Reduza a espessura da barra de progresso */
+  stroke-width: 0.8em; /* Reduza a espessura da barra de progresso */
   transform: translate(0.3em, 0.3em); /* Ajuste para centralizar a barra */
   stroke-dasharray: 251;
   transition: stroke-dashoffset 0.3s ease;
@@ -35,7 +40,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.4rem; /* Tamanho da fonte */
+  font-size: 1.6rem; /* Tamanho da fonte */
   font-weight: bold;
 }
 
@@ -46,12 +51,13 @@
   margin-left: 0.5em; /* Adicione um espaçamento lateral para separar o ícone/título do radial */
 }
 
-.icon {
+.icon-progress {
   font-size: 2em; /* Tamanho do ícone */
   margin-bottom: 0.3em; /* Adicione um espaçamento entre o ícone e o título */
+  font-weight: bold;
 }
 
-.title {
+.title-progress {
   font-size: 1.2em; /* Tamanho do título */
   font-weight: bold;
 }
