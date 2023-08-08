@@ -1,0 +1,131 @@
+
+  
+  .container-user-profile {
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    margin: 1em auto;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    border-radius: .5em;
+    width: 100%;
+    height: auto;
+    width: fit-content;    
+}
+  
+  .header-container {
+    width: 100%;
+    padding: 2em;
+  }
+  
+  .main-heading {   
+    width: 100%;
+    margin-left: 4em;
+    display: flex;
+    color: #fff;  
+    font-size: 26px;
+  }
+  .main-heading h1{
+    font-weight: bold;
+  }
+  .main-heading span{
+    font-weight: 500;
+  }
+  
+  .tag {
+    background-color: rgba(255, 255, 255, .35);
+    border-radius: 20px;
+    font-size: 11px;
+    padding: 1em 2em;
+    margin-left: .5em;
+    text-transform: uppercase;
+  }  
+  .stat-number {
+    display: inline-block;
+    font-weight: 600;
+    margin-left: 4px;
+  }
+  
+  .body-content {
+    background-color: #fff;
+    color: #555;
+    padding: 1em;
+    position: relative;
+    width: auto;
+    height: 100%;
+  }
+  
+  .body-image {
+    border-radius: 100%;
+    box-shadow: 5px 10px 75px rgba(0, 0, 0, .4);
+    float: left;
+    margin: -90px 0 20px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .body-stats {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    float: left;
+    margin: -14px 0  0 30px;
+    position: relative;
+    text-transform: uppercase;
+    width: 20%;
+  }
+  
+  .body-stats > span {
+    display: inline-block;
+    font-weight: 900;
+    margin-top: 8px;
+  }
+  
+  .body-info {
+    position: relative;
+    max-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: all 600ms ease-out;
+  }
+  /* Estilos para telas menores que 768px (por exemplo, smartphones) */
+@media (max-width: 768px) {
+    .container-user-profile {
+      max-width: 100%; /* Aumenta a largura máxima para preencher a tela */
+      padding: 0.5em; /* Reduz o espaçamento interno */
+    }
+  
+    .header-container {
+      flex-direction: column; /* Coloca os elementos em uma coluna */
+      align-items: flex-start; /* Alinha à esquerda */
+      padding: 1em; /* Ajusta o espaçamento */
+    }
+  
+    .main-heading {
+      margin-left: 0; /* Remove a margem à esquerda */
+    }
+  
+    /* Outros ajustes de estilo ... */
+  }
+  
+  
+
+.container-inputs {
+display: grid;
+grid-template-columns: 1fr 1fr; 
+gap: 20px;
+}
+
+.container-form >div{
+margin-top: 1em;
+
+}
+.titulo-form{
+  font-size: 16;
+}
+.subtitulo-form{
+  font-size: 14px;
+}
+
+.container-botao-atualizar{
+  width: 15%;
+}
+
