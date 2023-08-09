@@ -1,4 +1,4 @@
-
+import './dashboard.css';
 // bibliotecas
 import { IoMdPaperPlane} from 'react-icons/io';
 import React, { useState, useEffect} from 'react';
@@ -8,9 +8,10 @@ import React, { useState, useEffect} from 'react';
 // components
 import SidebarMenu from '../../Components/NovoSideBar';
 import UserCard from '../../Components/UserCard';
-import RadialProgressBar from '../../Components/CardProgressBar';
+import PacienteProfile from '../../Components/PacienteProfile';
 
 function Dashboard() {
+
   return (
     <div className="container-layout">
 
@@ -23,7 +24,7 @@ function Dashboard() {
             <UserCard/>
             </div>
 
-            <div>
+            {/* <div>
             <RadialProgressBar
               percentage={50}
               icon={<IoMdPaperPlane />}
@@ -32,15 +33,18 @@ function Dashboard() {
               radialColor="#237141" // Defina a cor do radial 
               textColor="#237141" // Defina a cor do texto
             />
-            </div>
+            </div> */}
+            
+            <div className='sessao-paciente-profile'>
+              <PacienteProfile/>
+            </div>   
 
-        </div>   
 
 
-
-        <div className="footer">
+          <div className="footer">
+          </div>
         </div>
-    </div>
+  </div>
   )
 }
 

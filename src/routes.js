@@ -1,12 +1,15 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 
-/* Paginas */
-import Dashboard from './Pages/Dashboard';
 /* components */
 // import Message from './components/Message';
 
+/* Paginas */
+import Dashboard from './Pages/Dashboard';
+
+
 import { UserProvider } from './context/UserContext';
+import FichaPaciente from './Pages/FichaPaciente';
 
 
 // function CheckAuth() {
@@ -25,6 +28,7 @@ function RoutesApp() {
   const routes = (
     <Routes>
       <Route path="/" element={<Dashboard />} />
+      <Route path='/ficha' element={<FichaPaciente/>} />
 
     </Routes>
   );

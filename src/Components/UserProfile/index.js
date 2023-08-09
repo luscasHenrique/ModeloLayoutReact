@@ -53,7 +53,7 @@ function UserProfile() {
   }
   return (
     <div className="container-user-profile">
-      <div className="header-container">
+      <div className="header-container ">
           <h1 className="main-heading">UserName  <span className="tag">Oque sou</span></h1>
         {/* END header */}
       </div>
