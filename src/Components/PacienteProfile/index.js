@@ -117,9 +117,15 @@ function PacienteProfile(){
     return (
         <div className="container-paciente-profile">
             <div className="header-container ">
-                <h1 className="main-heading">UserName  <span className="tag">Oque sou</span></h1>
-                {/* END header */}
+              <div className="main-heading">
+                <h1>UserName </h1>
+              </div>
+              <div className="main-heading">
+                <span className="tag">Oque sou</span>
+              </div>
             </div>
+            {/* END header */}
+
 
 
             <div className="body-content">
@@ -128,8 +134,9 @@ function PacienteProfile(){
                 alt="Hugh Jackman"
                 className="body-image"
                 />
-                <span className="body-stats">Tutor<br/> <span>User.name</span></span>
-                <span className="body-stats">Acompanhante <br/> <span>User.name</span></span>
+                    <span className="body-stats">Tutor<br/> <span>User.name</span></span>
+                    <span className="body-stats">Acompanhante <br/> <span>User.name</span></span>
+
 
                 <div className="body-info">
                     <ul className="nav nav-tabs">
@@ -153,18 +160,24 @@ function PacienteProfile(){
 
                     <div className="tab-content">
                         <div id="grafico" className={`tab-pane ${activeTab === 'grafico' ? 'active' : ''}`}>
+                          <h3>Gráfico de {user.name}</h3>
                             <div className='sessao-grafico'>
-                                <h5>Gráfico de {user.name}</h5>
                                 <RadarChart datasets={datasets} labels={chartLabels} />
                             </div>
+
+                            <div className=''>
+                            </div>
+
                         </div>
 
                         <div id="dados" className={`tab-pane ${activeTab === 'dados' ? 'active' : ''}`}>
                             {/* Conteúdo da aba de Dados */}
+                            <h1>Mais dados</h1>
                         </div>
 
                         <div id="outros" className={`tab-pane ${activeTab === 'outros' ? 'active' : ''}`}>
                             {/* Conteúdo da aba de Outros */}
+                            <h1>Outros dados</h1>
                         </div>
                     </div>
                 </div>
