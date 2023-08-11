@@ -77,6 +77,9 @@
     border: none;
     gap: 1em;
   }
+  .nav-tabs a.active{
+    background-color: aqua;
+  }
 
   .custom-tab-btn {
     font-size: 17px;
