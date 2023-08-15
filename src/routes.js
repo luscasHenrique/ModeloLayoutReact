@@ -10,6 +10,7 @@ import Dashboard from './Pages/Dashboard';
 
 import { UserProvider } from './context/UserContext';
 import FichaPaciente from './Pages/FichaPaciente';
+import Login from './Pages/Login';
 
 
 // function CheckAuth() {
@@ -29,6 +30,7 @@ function RoutesApp() {
     <Routes>
       <Route path="/" element={<Dashboard />} />
       <Route path='/ficha' element={<FichaPaciente/>} />
+      <Route path='/login' element={<Login/>}/>
 
     </Routes>
   );
